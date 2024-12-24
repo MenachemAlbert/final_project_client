@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Viewer</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="route-form">
+        <h1>בחירת נתונים</h1>
+        <form id="endpoint-form">
+            <label for="endpoint">בחירת נקודה:</label>
+            <select id="endpoint" name="endpoint" required>
+                <option value="" disabled selected>בחר נקודה</option>
+                <option value="/average_casualties_by_country">ממוצע נפגעים לפי מדינה</option>
+                <option value="/top_attack_types">סוגי ההתקפה הקטלניים ביותר</option>
+                <option value="/top_terror_group">קבוצות טרור הקטלניים ביותר</option>
+                <option value="/num_attacks_per_year_and_region">אחוז שינוי במספר הפיגועים בין שנים לפי אזור</option>
+                <option value="/active_groups_by_region">הקבוצות הפעילות ביותר באזור מסוים</option>
+            </select>
+
+            <label for="limit">הגבלה (אופציונלי):</label>
+            <select id="limit" name="limit">
+                <option value="">כל האיזורים</option> 
+                <option value="5">טופ 5</option>                
+            </select>
+            <button type="submit">טען מפה</button>
+        </form>
+    </div>
+
+    <div id="html-content">
+        <div id="map"></div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+#route-form {
+    width: 30%; 
+    background-color: #ffffff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#route-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+#route-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    color: #555;
+}
+
+#route-form input,
+#route-form select,
+#route-form button {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#route-form input:focus,
+#route-form select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+#html-content {
+    flex-grow: 1; 
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
